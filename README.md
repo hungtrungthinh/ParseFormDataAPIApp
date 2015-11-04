@@ -12,3 +12,17 @@ Click the "Deploy to Azure" button above.  You can create new resources or refer
 
 ## API Documentation ##
 The app has one action that generates a JSON object representing the x-www-form-urlencoded data passed to the service.
+
+### Parse Form POST Data Action ###
+The action has the following inputs
+
+| Property | Friendly Name | Description |
+| ----- | ----- | ----- |
+| PostData | POST Data | Form data to be decoded |
+
+The action will return the following output provided valid data
+
+| Property | Friendly Name | Description |
+| ----- | ----- | ----- |
+| body | body | Object that takes the shape of the decoded data |
+
