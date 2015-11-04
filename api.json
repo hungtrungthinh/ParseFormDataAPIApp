@@ -33,8 +33,7 @@
 							"type": "object"}
 						}
 					}
-				},
-				"deprecated": false
+				}
 			}
 		},
 	  "definitions": {
