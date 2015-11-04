@@ -1,0 +1,53 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "v1",
+		"title": "POST Data Decode API App",
+    	"description": "An API App that decodes raw POST data to a JSON object for easier access in a Logic App."
+	},
+	"host": "localhost:1337",
+	"schemes": ["http", "https"],
+  "basePath": "/",
+	"paths": {
+		"/encodedinput": {
+			"post": {
+				"tags": ["EncodedInput"],
+				"operationId": "decodeInput",
+				"consumes": ["application/json"],
+				"produces": ["application/json",
+				"text/json",
+				"application/xml",
+				"text/xml"],
+				"parameters": [
+          			{
+            			"name": "postdata",
+            			"in": "body",
+            			"required": true,
+            			"schema": {  "$ref": "#/definitions/payload" }
+          			}
+        		],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "object"}
+						}
+					}
+				},
+				"deprecated": false
+			}
+		},
+	  "definitions": {
+    	"payload": {
+      		"required": [ "PostData" ],
+      		"type": "object",
+      		"properties": { 
+				"PostData": {
+          			"description": "Form data to be decoded",
+          			"type": "string",
+          			"x-ms-summary": "POST Data"
+        		}
+			  }
+		}
+	  }
+}
