@@ -1,4 +1,4 @@
-#POST Data Decode API App
+#Parse Form Data API App
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 ## Deploying ##
