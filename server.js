@@ -17,9 +17,8 @@ app.get('/swagger/docs/v1', function(req,res){
 });
 
 app.post('/encodedinput', function(req,res) {
-         var result = qs.parse(req.body.PostData);
-          console.log(JSON.stringify(result,null,2));
-          res.json(result);
+    var result = qs.parse(req.body.PostData);
+    res.json(result);
 });
 
 var server = http.createServer(app);
