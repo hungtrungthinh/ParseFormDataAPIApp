@@ -12,7 +12,8 @@
 		"/encodedinput": {
 			"post": {
 				"tags": ["EncodedInput"],
-				"operationId": "decodeInput",
+				"summary": "Parse Form POST Data",
+				"operationId": "parseformdata",
 				"consumes": ["application/json"],
 				"produces": ["application/json",
 				"text/json",
